@@ -1,0 +1,31 @@
+ 
+<div class="p-grid p-col-fixed " style="height:700px">
+  <div class="p-col-12" style="text-align:center;background-color:violet; height:15%">
+    <div class="p-grid">
+      <div class="p-col-8">
+        <h4>Options</h4>
+        <button (click)="generateTiles()"> Easy</button>
+        <button (click)="generateTiles()"> Medium</button>
+        <button (click)="generateTiles()"> Hard</button>
+      </div>
+      <div class="p-col-4">
+        <ng-container *ngIf="!selectedTile">No Tile Selected</ng-container>
+        <ng-container *ngIf="selectedTile">{{selectedTile.piece.sprite}}</ng-container>
+      </div>
+    </div>
+
+  </div>
+  <div class="p-col-12 no-padding" style="background-color: dimgrey; height:85%">
+    <div class="p-grid" style="height:100%; margin:auto;text-align:center">
+      <div class="p-col-12 no-padding"  *ngFor="let r of tiles;index as i">
+        <div class="p-grid" style="height:100%; margin:auto; text-align:center">
+          <div class="p-col tileWrapper" *ngFor="let t of tiles[i];" (click)="selectTile(t)">
+            <div class="tile" [ngStyle]="addStyles(t)">
+              <ng-container *ngIf="t.piece">{{t.piece.sprite}}</ng-container>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

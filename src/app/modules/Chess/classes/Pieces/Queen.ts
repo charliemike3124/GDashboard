@@ -1,0 +1,8 @@
+import { Piece } from '../Piece';
+
+export class Queen extends Piece {
+
+  public move() {
+
+  }
+}

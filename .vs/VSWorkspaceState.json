@@ -1,0 +1,13 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\src",
+    "\\src\\app",
+    "\\src\\app\\modules",
+    "\\src\\app\\modules\\Chess",
+    "\\src\\app\\modules\\Chess\\classes",
+    "\\src\\app\\modules\\Chess\\classes\\Pieces"
+  ],
+  "SelectedNode": "\\src\\app\\modules\\Chess\\classes\\Pieces\\Pawn.ts",
+  "PreviewInSolutionExplorer": false
+}
